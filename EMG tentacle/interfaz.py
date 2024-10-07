@@ -52,7 +52,7 @@ class MainWindow(QMainWindow):
 
         # Configurar la comunicación serial
         try:
-            self.ser = serial.Serial('COM10', 115200)  # Reemplaza 'COM3' por el puerto correcto
+            self.ser = serial.Serial('COM16', 115200)  # Reemplaza 'COM3' por el puerto correcto
         except serial.SerialException:
             print("Error: No se pudo abrir el puerto serial.")
             sys.exit(1)
